@@ -21,6 +21,25 @@ namespace TestApp
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
+            // create a new window instance based on the screen size
+            Window = new UIWindow(UIScreen.MainScreen.Bounds);
+
+            var controller = new UIViewController(); 
+            controller.View.BackgroundColor = UIColor.Blue;
+            controller.Title = "TheFirstControllerICreated";
+
+            //Navigation controller helps deep navigation between pages i.e. multiple levels of navigation
+            var myFirstNavController = new UINavigationController(controller);
+
+            //this is where we will start adding our custom view controller
+            var myCustomController = new CustomViewController();
+            var mySecondNavController = new UINavigationController(myCustomController);
+
+            Window.RootViewController = mySecondNavController;// This was to use the first one => myFirstNavController;
+
+            // make the window visible
+            Window.MakeKeyAndVisible();
+
             return true;
         }
 

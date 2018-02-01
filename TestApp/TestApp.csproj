@@ -91,7 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -109,6 +108,7 @@
       <DependentUpon>DataViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelController.cs" />
+    <Compile Include="CustomViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
