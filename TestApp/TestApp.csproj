@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="ModelController.cs" />
     <Compile Include="CustomViewController.cs" />
+    <Compile Include="CircleView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
